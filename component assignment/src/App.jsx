@@ -1,9 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState } from 'react';
+import Header from './Components/ComponentUI';
+import image from './assets/image1.jpg';
+import ProductForm from './Components/Orderform';
 
-function App() {
 
-}
+const App = () => {
+  return (
+    <div>
+      <Header title="Welcome to product page!" image={image} />
+      <ProductForm />
+    </div>
+  );
+};
 
-export default App
+export default App;
